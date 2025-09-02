@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Mini-App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <header>
+    <h1>Interactive Personal Dashboard</h1>
+    <button id="themeToggle">Toggle Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section id="welcomeCard">
+      <h2>Welcome!</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button id="welcomeBtn">Say Hello</button>
+      <p id="welcomeMessage"></p>
+    </section>
+
+    <!-- Counter -->
+    <section id="counter">
+      <button id="decrement">-</button>
+      <span id="countValue">0</span>
+      <button id="increment">+</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-question">What is this dashboard?</div>
+        <div class="faq-answer">It's a practice project for learning JavaScript events!</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Can I add new features?</div>
+        <div class="faq-answer">Yes! Be creative and extend it further.</div>
+      </div>
+    </section>
+
+    <!-- Dropdown -->
+    <div class="dropdown">
+      <button id="dropdownBtn">Menu</button>
+      <div class="dropdown-content" id="dropdownContent">
+        <a href="#">Profile</a>
+        <a href="#">Tasks</a>
+        <a href="#">Settings</a>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" data-tab="profile">Profile</div>
+      <div class="tab" data-tab="tasks">Tasks</div>
+      <div class="tab" data-tab="settings">Settings</div>
+    </div>
+    <div class="tab-content active" id="profile">
+      <h3>Profile Section</h3>
+      <p>This is your profile content.</p>
+    </div>
+    <div class="tab-content" id="tasks">
+      <h3>Tasks Section</h3>
+      <p>Here you can list your tasks.</p>
+    </div>
+    <div class="tab-content" id="settings">
+      <h3>Settings Section</h3>
+      <p>Update your preferences here.</p>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="userForm">
+      <h2>Create Account</h2>
+      <input type="text" id="username" placeholder="Name" required />
+      <div id="usernameError" class="error"></div>
+      <input type="email" id="email" placeholder="Email" required />
+      <div id="emailError" class="error"></div>
+      <input type="password" id="password" placeholder="Password" required />
+      <div id="passwordError" class="error"></div>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      <div id="confirmError" class="error"></div>
+      <button type="submit">Register</button>
+      <div id="formSuccess" class="success"></div>
+    </form>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

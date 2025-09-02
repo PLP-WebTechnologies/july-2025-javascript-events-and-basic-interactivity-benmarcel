@@ -1,0 +1,147 @@
+/* === Basic Styling === */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* === Light/Dark Mode === */
+    .dark-mode {
+      background: #1a1a1a;
+      color: #f4f4f4;
+    }
+
+    button {
+      cursor: pointer;
+      margin: 0.5rem 0;
+      padding: 0.5rem 1rem;
+    }
+
+    /* === Welcome Card === */
+    #welcomeCard {
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    #welcomeCard:hover {
+      transform: scale(1.02);
+    }
+
+    /* === Counter === */
+    #counter {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    #countValue {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* === FAQ Section === */
+    .faq-item {
+      margin-bottom: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .faq-question {
+      background: #eee;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0.5rem;
+      background: white;
+    }
+
+    /* === Tabs === */
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .tab {
+      padding: 0.5rem 1rem;
+      background: #ddd;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .tab.active {
+      background: #0077cc;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+    }
+
+    /* === Dropdown Menu === */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      min-width: 150px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: #333;
+    }
+    .dropdown-content a:hover {
+      background: #eee;
+    }
+
+    /* === Form === */
+    form {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+    }
+    input {
+      display: block;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      width: 100%;
+    }
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+    .success {
+      color: green;
+      font-size: 0.9rem;
+    }
+   
